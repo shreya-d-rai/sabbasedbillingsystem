@@ -28,7 +28,7 @@ public class MeterReadingEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer meterReadingId;
 
-	@Column(name = "reading_data")
+	@Column(name = "reading_date")
 	LocalDate readingDate;
 	
 	@Column(name = "units_consumed")

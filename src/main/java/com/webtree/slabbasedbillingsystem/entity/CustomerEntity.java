@@ -31,7 +31,7 @@ public class CustomerEntity {
 	String customerName;
 	
 	@Column(name = "contact_number")
-	Long contactNumber;
+	String contactNumber;
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "address_id")

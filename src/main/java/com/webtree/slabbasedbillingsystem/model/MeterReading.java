@@ -2,6 +2,7 @@ package com.webtree.slabbasedbillingsystem.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,8 +18,10 @@ public class MeterReading {
 
 	LocalDate readingDate;
 	
+	@NotNull(message = "Units consumed must not be null")
     Integer unitsConsumed;
 
+	@NotNull(message = "Customer ID must not be null")
     Integer customerId;
 
 }
